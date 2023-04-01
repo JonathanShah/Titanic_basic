@@ -1,0 +1,21 @@
+<html>
+    <h1>Titanic survival</h1>
+    <h2>Passenger classes range from 1-3 </h2>
+    <p1>Input 1 or 0 for female and male values</p1>
+    
+    <form method ='post' enctype="multipart/form-data" action="predictMPG">
+    {% csrf_token %}
+    <div class="col-md-4 col-sm-4"><label for="fname">Passenger Class:</label> </div> <input name="Pclass" type="text" value={{temp.Pclass}}><br><br>
+    <div class="col-md-4 col-sm-4"><label for="lname">Female:</label> </div> <input type="text" id="lname" name="Sex_female" value={{temp.Sex_female}}><br><br>
+    <div class="col-md-4 col-sm-4"><label for="fname">Male:</label> </div> <input type="text" id="fname" name="Sex_male" value={{temp.Sex_male}}><br><br>
+    <br><br>
+
+    <br>
+
+    <input type="submit" value = 'submit'></div>
+
+</form>
+<br>
+<h1>{{scoreval}}</h1>
+
+</html>
